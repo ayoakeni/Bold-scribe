@@ -302,7 +302,6 @@ main{
   opacity: 0px;
   border: 1px dashed #457B9D;
   background-color: #FFFFFF;
-  cursor: pointer;
 }
 .drag-box .d-txt{
   font-family: Lucida Grande;
@@ -334,18 +333,48 @@ main{
   text-align: left;
   color: #E63946;
   margin-top: 10px;
+  cursor: pointer;
 }
 .ac-t{
   display: flex;
+  align-items: center;
   margin-top: 3px;
+  gap: 30px;
 }
-.ac-t input{
+.ac-t input[type="checkbox"] {
   width: 40px;
   height: 38px;
   border-radius: 10px;
   border: 1px solid #1D3557B2;
-  opacity: 0px; 
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.ac-t input[type="checkbox"]::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid #1D3557B2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.ac-t input[type="checkbox"]:checked::before {
+  background-color: #F55C4E;
+}
+
+.ac-t input[type="checkbox"]:checked::after {
+  content: '✔';
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 4px;
+  left: 10px;
 }
 .ac-t span{
   font-family: Lucida Grande;
@@ -368,11 +397,11 @@ main{
   height: 53px;
   left: 1px;
   padding: 10px 30px 10px 30px;
-  gap: 10px;
   border-radius: 10px;
   border: none;
   opacity: 0px;
   background-color: #F55C4E;
+  margin-top: 30px;
   color: #FFFFFF;
   cursor: pointer;
 }
