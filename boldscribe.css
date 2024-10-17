@@ -186,6 +186,7 @@ main{
   flex-direction: column;
   gap: 80px;
   margin-top: 100px;
+  margin-bottom: 120px;
 }
 .about{
   display: flex;
@@ -579,7 +580,7 @@ main{
   display: flex;
   flex-direction: column;
   width: 781px;
-  height: 584px;
+  height: auto;
   gap: 64px;
   opacity: 0px;
   margin: auto;
@@ -645,7 +646,7 @@ main{
 }
 footer{
   width: 100%;
-  padding: 120px 50px 10px;
+  padding: 0px 50px 10px;
   background-color: #fff;
 }
 .foot{
