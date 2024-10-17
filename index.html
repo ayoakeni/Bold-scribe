@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bold Scribe</title>
     <link rel="stylesheet" href="boldscribe.css">
-    <script src="boldscribe.js"></script>
   </head>
   <body>
     <header>
@@ -71,15 +70,17 @@
             </div>
             <input type="text" id="address" name="address" required placeholder="Full address: Street, Number, Postal Code, City, Province *">
             <input type="tel" id="phone" name="phone" required placeholder="Phone Number *" pattern="[0-9]{10}">
-            <div class="drag-box">
+            <div class="drag-box" id="dragBox">
               <span class="d-txt">Drag & Drop Files Here</span>
               <span class="or-br">
                 <span>or</span>
-                <span>Browse Files</span>
+                <span id="browseFilesTrigger">Browse Files</span>
+                <!-- Hidden File Input -->
+                <input type="file" id="fileInput" required style="display: none;" multiple>
               </span>
-            </div>
+            </div>            
             <div class="ac-t">
-              <input type="checkbox" name="" id="">
+              <input type="checkbox" name="" id="" required>
               <span>I accept the Privacy and Data Protection Policy. <b>Please click it to be able to send the form.</b></span>
             </div>
             <button type="submit">Submit Your Manuscript</button>
@@ -87,5 +88,6 @@
         </div>
       </main>
     </section>
+    <script src="boldscribe.js"></script>
   </body>
 </html>

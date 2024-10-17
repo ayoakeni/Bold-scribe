@@ -325,7 +325,7 @@ main{
   color: #000000;
   margin-top: 9px;
 }
-.drag-box .or-br span:last-child{
+.drag-box .or-br span:nth-child(2){
   font-family: Lucida Grande;
   font-size: 15px;
   font-weight: 400;
