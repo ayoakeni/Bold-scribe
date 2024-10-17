@@ -592,22 +592,25 @@ main{
   text-align: left;
   margin: auto;
 }
-.faq-q{
+.faq-q {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.ask-faq{
+
+.ask-faq {
   padding-bottom: 25px;
   border-bottom: 1px solid #457B9D;
 }
-.q-faq{
+
+.q-faq {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-.q-faq span{
+
+.q-faq span {
   font-family: Lucida Grande;
   font-size: 25px;
   font-weight: 400;
@@ -615,7 +618,8 @@ main{
   text-align: left;
   color: #1D3557;
 }
-.ask-faq p{
+
+.ask-faq p {
   display: none;
   font-family: Lucida Grande;
   font-size: 20px;
@@ -624,6 +628,20 @@ main{
   text-align: left;
   color: #5F676C;
   padding-top: 15px;
+}
+
+.toggle-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+}
+
+.ask-faq.active .toggle-icon {
+  transform: rotate(45deg); /* Change the icon rotation for expanded state */
+}
+
+.ask-faq.active p {
+  display: block; /* Display the answer when the question is clicked */
 }
 footer{
   width: 100%;

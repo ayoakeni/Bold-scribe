@@ -52,3 +52,19 @@ fileInput.addEventListener("change", function(event) {
     fileMessage.textContent = "No files were selected.";
   }
 });
+
+// Faq
+document.querySelectorAll('.ask-faq').forEach(faq => {
+  faq.addEventListener('click', function() {
+    // Toggle the "active" class
+    this.classList.toggle('active');
+
+    // Toggle the icon between plus and minus
+    const icon = this.querySelector('.toggle-icon');
+    if (this.classList.contains('active')) {
+      icon.src = './logo_icon/minus.png'; // Change to minus icon
+    } else {
+      icon.src = './logo_icon/plus.png';  // Change back to plus icon
+    }
+  });
+});
