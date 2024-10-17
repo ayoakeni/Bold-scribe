@@ -303,6 +303,10 @@ main{
   border: 1px dashed #457B9D;
   background-color: #FFFFFF;
 }
+.drag-box.drag-over {
+  background-color: #e0f7fa; /* Highlight when dragging */
+  border-color: #00796b;
+}
 .drag-box .d-txt{
   font-family: Lucida Grande;
   font-size: 30px;
@@ -334,6 +338,9 @@ main{
   color: #E63946;
   margin-top: 10px;
   cursor: pointer;
+}
+.drag-box .or-br span:nth-child(2):hover{
+  text-decoration: underline;
 }
 .fileMessage{
   font-family: Lucida Grande;

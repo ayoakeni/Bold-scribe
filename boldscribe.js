@@ -10,7 +10,6 @@ function handleFileDrop(event) {
   
   // Handle the dropped files
   const files = event.dataTransfer.files;
-  console.log("Dropped files:", files);
   
   if (files.length > 0) {
     fileMessage.textContent = `${files.length} file(s) dropped successfully.`;
@@ -46,7 +45,6 @@ browseFilesTrigger.addEventListener("click", function() {
 // Handle file input change
 fileInput.addEventListener("change", function(event) {
   const files = event.target.files;
-  console.log("Selected files through input:", files);
   
   if (files.length > 0) {
     fileMessage.textContent = `${files.length} file(s) selected successfully.`;
