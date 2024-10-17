@@ -2,6 +2,7 @@
 const dragBox = document.getElementById("dragBox");
 const fileInput = document.getElementById("fileInput");
 const browseFilesTrigger = document.getElementById("browseFilesTrigger");
+const fileMessage = document.getElementById("fileMessage");  // Message element
 
 // Function to handle file drops
 function handleFileDrop(event) {
@@ -10,8 +11,12 @@ function handleFileDrop(event) {
   // Handle the dropped files
   const files = event.dataTransfer.files;
   console.log("Dropped files:", files);
-
-  // You can process or upload the files here
+  
+  if (files.length > 0) {
+    fileMessage.textContent = `${files.length} file(s) dropped successfully.`;
+  } else {
+    fileMessage.textContent = "No files were dropped.";
+  }
 }
 
 // Highlight the drag box when dragging files over it
@@ -38,9 +43,14 @@ browseFilesTrigger.addEventListener("click", function() {
   fileInput.click();
 });
 
-// Handle file input change (optional)
+// Handle file input change
 fileInput.addEventListener("change", function(event) {
   const files = event.target.files;
-  console.log("Selected files:", files);
-  // You can process or upload the files here
+  console.log("Selected files through input:", files);
+  
+  if (files.length > 0) {
+    fileMessage.textContent = `${files.length} file(s) selected successfully.`;
+  } else {
+    fileMessage.textContent = "No files were selected.";
+  }
 });
