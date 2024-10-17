@@ -254,7 +254,7 @@ main{
   flex-direction: column;
   padding: 56px 135px 56px 135px;
   gap: 10px;
-  border-radius: 20px 0px 0px 0px;
+  border-radius: 20px;
   opacity: 0px;
   background-color: #ECF3FE;
   }
