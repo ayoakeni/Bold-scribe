@@ -625,3 +625,47 @@ main{
   color: #5F676C;
   padding-top: 15px;
 }
+footer{
+  width: 100%;
+  padding: 120px 50px 10px;
+  background-color: #fff;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot .atf-s{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.foot .atf-s .atf{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.foot .atf-s .atf a{
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20.43px;
+  text-align: left;
+  color: #191919;
+  text-decoration: none;
+}
+.foot .atf-s button{
+  font-family: Lucida Grande;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33.47px;
+  text-align: left;
+  color:#FFFFFF;
+  width: 284px;
+  height: 53px;
+  padding: 10px 30px 10px 30px;
+  background-color: #F55C4E;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
