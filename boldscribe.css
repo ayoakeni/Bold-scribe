@@ -489,3 +489,68 @@ main{
   background-color: #F55C4E;
   cursor: pointer;
 }
+.authors{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  opacity: 0px;
+}
+.authors .w-s{
+  font-family: Sorts Mill Goudy;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 64.71px;
+  text-align: left;
+}
+.auth-txt-rep{
+  display: flex;
+  gap: 31px;
+}
+.auth-rep{
+  display: flex;
+  align-items: flex-start;
+  padding: 49px 30px 49px 30px;
+  gap: 20px;
+  border-radius: 10px;
+  border: 1px;
+  opacity: 0px;
+  background-color: #ECF3FE;
+}
+.auth-img{
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* width: 175px;
+  height: 100px; */
+  border-radius: 50px;
+  background-color: lightgray;
+  overflow: hidden;
+}
+.auth-img img{
+  position: relative;
+  right: 25px;
+  width: 175px;
+  height: 100px;
+}
+.auth-txt{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0px;
+}
+.auth-txt span{
+  font-family: Lucida Grande;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 55.79px;
+  text-align: left;
+  color: #000000;
+}
+.auth-txt p{
+  font-family: Lucida Grande;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 37.19px;
+  text-align: left;
+  color: #5F676C;
+}
