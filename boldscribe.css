@@ -538,6 +538,7 @@ main{
   flex-direction: column;
   gap: 20px;
   opacity: 0px;
+  padding-top: 22px;
 }
 .auth-txt span{
   font-family: Lucida Grande;
