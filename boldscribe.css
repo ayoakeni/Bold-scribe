@@ -249,3 +249,130 @@ main{
   opacity: 0px;
   background-color: #C8DEFD;
 }
+  .form-submit{
+  display: flex;
+  flex-direction: column;
+  padding: 56px 135px 56px 135px;
+  gap: 10px;
+  border-radius: 20px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #ECF3FE;
+  }
+  .form-submit .s-m{
+  font-family: Sorts Mill Goudy;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 64.71px;
+  text-align: left;
+  margin: auto;
+}
+.form-submit form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 60px;
+}
+.form-submit form input{
+  font-family: Lucida Grande;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33.47px;
+  text-align: left;
+  color: #818397;
+  outline-color: #F55C4E;
+  padding: 15px 25px 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #EBEAEA;
+  width: 100%;
+  opacity: 0px;
+  background-color: #FFFFFF;
+}
+.form-submit form .n-e{
+  display: flex;
+  gap: 30px;
+}
+.drag-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 979px;
+  height: 202px;
+  border-radius: 10px;
+  opacity: 0px;
+  border: 1px dashed #457B9D;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.drag-box .d-txt{
+  font-family: Lucida Grande;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 55.79px;
+  text-align: left;
+  color: #000000;  
+}
+.drag-box .or-br{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.drag-box .or-br span:first-child{
+  font-family: Lucida Grande;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27.9px;
+  text-align: left;
+  color: #000000;
+  margin-top: 9px;
+}
+.drag-box .or-br span:last-child{
+  font-family: Lucida Grande;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27.9px;
+  text-align: left;
+  color: #E63946;
+  margin-top: 10px;
+}
+.ac-t{
+  display: flex;
+  margin-top: 3px;
+}
+.ac-t input{
+  width: 40px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid #1D3557B2;
+  opacity: 0px; 
+  background-color: #FFFFFF; 
+}
+.ac-t span{
+  font-family: Lucida Grande;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33.47px;
+  text-align: left;
+  color: #1D3557;
+}
+.ac-t span b{
+  color: #000000;
+}
+.form-submit form button{
+  font-family: Lucida Grande;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33.47px;
+  text-align: left;
+  width: 284px;
+  height: 53px;
+  left: 1px;
+  padding: 10px 30px 10px 30px;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  opacity: 0px;
+  background-color: #F55C4E;
+  color: #FFFFFF;
+  cursor: pointer;
+}
