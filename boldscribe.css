@@ -97,7 +97,7 @@ section{
   width: 50%;
 }
 .left-content span{
-  font-family: Sorts Mill Goudy;
+  /* font-family: Sorts Mill Goudy; */
   font-size: 50px;
   font-weight: 400;
   line-height: 71.9px;
@@ -398,10 +398,14 @@ main{
   font-weight: 400;
   line-height: 33.47px;
   text-align: left;
-  color: #1D3557;
-}
-.ac-t span b{
   color: #000000;
+}
+.ac-t span a{
+  color: #1D3557;
+  text-decoration: none;
+}
+.ac-t span a:hover{
+  text-decoration: underline;
 }
 .form-submit form button{
   font-family: Lucida Grande;
