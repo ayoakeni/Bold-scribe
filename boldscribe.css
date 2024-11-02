@@ -456,7 +456,7 @@ main{
 .updates form{
   display: flex;
   justify-content: space-between;
-  width: 832px;
+  width: 80%;
   height: 63px;
   padding: 7px 6px 6px 23.82px;
   gap: 200.57px;
